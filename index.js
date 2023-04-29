@@ -8,7 +8,7 @@ const categories = require("./data/category.json");
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("Dragon is running");
+  res.send("Dragon news is running");
 });
 
 app.get("/categories", (req, res) => {
@@ -16,5 +16,5 @@ app.get("/categories", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Dragon API is running on port: ${port}`);
+  console.log(`Dragon news API is running on port: ${port}`);
 });
